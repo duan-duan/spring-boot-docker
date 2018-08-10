@@ -26,6 +26,19 @@ public class SampleController {
     @ResponseBody
     String home() {
         logger.info("Hello World!");
+        new Thread(() -> {
+            System.out.println("hello world");
+            logger.info("kakka");
+        }).start();
+
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println(" hello");
+            }
+        }).start();
+
         return "Hello World!";
     }
 

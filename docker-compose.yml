@@ -5,13 +5,5 @@ services:
     ports:
      - "8800:8080"
     volumes:
-     - /Users/lsjr3/losg:/letv/logs
-     - /Users/lsjr3/data:/letv/data
-   spring-boot-docker:
-       image: harry21/spring-boot-docker:latest
-       ports:
-        - "8800:8080"
-       volumes:
-        - /Users/lsjr3/losg:/letv/logs
-        - /Users/lsjr3/data:/letv/data
+     - /Users/lsjr3/dockerData:/Users/lsjr3
 

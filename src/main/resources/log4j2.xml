@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="warn" name="mump-admin" packages="">
+<Configuration status="warn" name="spring-boot-docker" packages="">
 	<Appenders>
 		<Console name="consoleLogger">
 			<PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss} %-5p] [%t] {%c:%L}-%m%n" />
 		</Console>
 		<RollingFile name="rollingFile" fileName="/Users/lsjr3/spring-boot-docker.log"
-			filePattern="/Users/lsjr3/$${date:yyyy-MM}/mump-admin-%d{MM-dd-yyyy}-%i.log.gz">
+			filePattern="/Users/lsjr3/$${date:yyyy-MM}/spring-boot-docker-%d{MM-dd-yyyy}-%i.log.gz">
 			<PatternLayout>
 				<Pattern>%d{yyyy-MM-dd HH:mm:ss} %p %c{1.} [%t] %m%n</Pattern>
 			</PatternLayout>
