@@ -1,26 +1,10 @@
-version : '3.3'
+version: '3.3'
 
 services:
   web:
     build: web
-    image: dockerdemos/lab-web
-    volumes:
-      - "./web/static:/static"
+    image: harry21/spring-boot-docker
     ports:
-      - "80:80"
-
-  words:
-    build: words
-    image: dockerdemos/lab-words
-    deploy:
-      replicas: 5
-      endpoint_mode: dnsrr
-      resources:
-        limits:
-          memory: 16m
-        reservations:
-          memory: 16m
-
-  db:
-    build: db
-    image: dockerdemos/lab-db
+      - "8800:8080"
+    volumes:
+      - /Users/lsjr3/dockerData:/Users/lsjr3
