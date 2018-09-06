@@ -61,7 +61,7 @@
                 <version>1.4.3</version>
                 <configuration>
                     <username>972065033@qq.com</username>
-                    <password>wangyu011961</password>
+                    <password>*********</password>
                     <repository>harry21/${project.artifactId}</repository>
                     <buildArgs>
                         <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
