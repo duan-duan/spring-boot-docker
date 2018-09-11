@@ -4,8 +4,8 @@
 		<Console name="consoleLogger">
 			<PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss} %-5p] [%t] {%c:%L}-%m%n" />
 		</Console>
-		<RollingFile name="rollingFile" fileName="/Users/lsjr3/spring-boot-docker.log"
-			filePattern="/Users/lsjr3/$${date:yyyy-MM}/spring-boot-docker-%d{MM-dd-yyyy}-%i.log.gz">
+		<RollingFile name="rollingFile" fileName="/Users/harry/spring-boot-docker.log"
+			filePattern="/Users/harry/$${date:yyyy-MM}/spring-boot-docker-%d{MM-dd-yyyy}-%i.log.gz">
 			<PatternLayout>
 				<Pattern>%d{yyyy-MM-dd HH:mm:ss} %p %c{1.} [%t] %m%n</Pattern>
 			</PatternLayout>
